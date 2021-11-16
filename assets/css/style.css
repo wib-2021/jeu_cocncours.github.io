@@ -60,28 +60,32 @@ header .logo img {
 }
 
 .layout {
-  padding: 80px 0;
+  padding: 50px 0;
   max-width: 600px;
   margin: 0 auto;
 }
+.layout .first_p{
+    font-size: 18px;
+    font-weight: 500;
+}
 
-.layout .form_container {
+.layout .form_group{
   display: flex;
   justify-content: center;
 }
-.layout .form_container input {
+.layout .form_group input {
   width: 250px;
-  border-radius:0 ;
-  -webkit-border-radius:0 ;
-  -moz-border-radius:0 ;
-  -ms-border-radius:0 ;
-  -o-border-radius:0 ;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
-.layout .form_container input:focus {
-box-shadow: 0 0 4px 0px #d13737;
-border-color: var(--main-color);
+.layout .form_group input:focus {
+  box-shadow: 0 0 4px 0px #d13737;
+  border-color: var(--main-color);
 }
-.layout button {
+.layout .btn_add {
   border: 0;
   padding: 0;
   background-color: var(--main-color);
@@ -89,12 +93,15 @@ border-color: var(--main-color);
   padding: 10px;
 }
 
-.layout .trier{
-    display: block;
-    margin: 0 auto;
-    width: 240px;
-    font-size: 20px;
+.layout .trier {
+  display: block;
+  margin: 0 auto;
+  width: 240px;
+  font-size: 20px;
+  background-color: #aaa;
+  cursor: not-allowed;
+  color: white;
 }
-.layout .trier:hover{
-    color: white;
+.layout .trier:hover {
+  color: white;
 }
