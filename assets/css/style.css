@@ -1,0 +1,100 @@
+:root {
+  --main-color: #ac0000;
+}
+
+/* ico moon  */
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?grmho8");
+  src: url("../fonts/icomoon.eot?grmho8#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?grmho8") format("truetype"),
+    url("../fonts/icomoon.woff?grmho8") format("woff"),
+    url("../fonts/icomoon.svg?grmho8#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-plus:before {
+  content: "\ea0a";
+}
+
+/* ico moon  */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+header .logo {
+  max-width: 400px;
+}
+
+header .logo img {
+  width: 100%;
+}
+
+.layout {
+  padding: 80px 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.layout .form_container {
+  display: flex;
+  justify-content: center;
+}
+.layout .form_container input {
+  width: 250px;
+  border-radius:0 ;
+  -webkit-border-radius:0 ;
+  -moz-border-radius:0 ;
+  -ms-border-radius:0 ;
+  -o-border-radius:0 ;
+}
+.layout .form_container input:focus {
+box-shadow: 0 0 4px 0px #d13737;
+border-color: var(--main-color);
+}
+.layout button {
+  border: 0;
+  padding: 0;
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px;
+}
+
+.layout .trier{
+    display: block;
+    margin: 0 auto;
+    width: 240px;
+    font-size: 20px;
+}
+.layout .trier:hover{
+    color: white;
+}
