@@ -31,19 +31,31 @@
 
             <section class="layout text-center">
 
-                <p class="text-center">Ajoutez plusieurs éléments à tirer au sort, puis cliquez sur "Tirer au sort"..
-                </p>
-                <div class="form_container my-5">
-                    <input type="text" placeholder="Ex:Paul" class="form-control">
-                    <button><span class="icon-plus add_icon"></span></button>
-                </div>
 
-                <p class="text-center text-secondary">Pour ajouter un élément, inscrivez-le ci-dessus puis cliquez sur
-                    le bouton [+] ou sur la touche Entrée)</p>
+                <p class="first_p">Tirage au sort Grand Jeu Concours une nuitée au Casablanca Hôtel.</p>
 
-                <button class="btn trier">Trier au sort</button>
-                <p class="my-3">Ou</p>
-                <p></p>
+                <form action="">
+
+                    <div class="form_group my-5">
+                        <input type="text" placeholder="Ex:Paul" id="text_val" class="form-control">
+                        <button class="btn_add"><span class="icon-plus"></span></button>
+                    </div>
+
+                    <!-- show elements here  -->
+                    <div class="elements_wraper">
+                        <ul></ul>
+                    </div>
+                    <!-- show elements here  -->
+                    
+                    <button class="btn trier">Trier au sort</button>
+
+                    <div class="form_group my-5">
+
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+
+                </form>
+
 
             </section>
 
