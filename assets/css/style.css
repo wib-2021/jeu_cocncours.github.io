@@ -32,9 +32,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-loop:before {
+  content: "\ea2d";
+}
+.icon-arrow-left2:before {
+  content: "\ea40";
+}
 .icon-plus:before {
   content: "\ea0a";
 }
+
 
 /* ico moon  */
 
@@ -65,12 +72,16 @@ header .logo img {
   width: 100%;
 }
 
+
+/* ////////////////////////////////////// */
+
 .layout {
   padding: 50px 0;
   max-width: 600px;
   margin: 0 auto;
+  text-align: center;
 }
-.layout .first_p {
+.layout .big_title {
   font-size: 18px;
   font-weight: 500;
 }
@@ -99,8 +110,8 @@ header .logo img {
   padding: 10px;
 }
 
-.layout .trier {
-  display: block;
+.layout .btn {
+  display: inline-block;
   margin: 0 auto;
   width: 240px;
   font-size: 20px;
@@ -108,12 +119,12 @@ header .logo img {
   color: white;
 }
 
-.layout .trier.disabled {
+.layout .btn.disabled {
   background-color: #aaa;
   cursor: not-allowed;
   pointer-events: none;
 }
-.layout .trier:hover {
+.layout .btn:hover {
   color: white;
 }
 .layout .elements_wraper ul {
@@ -126,19 +137,46 @@ header .logo img {
   padding: 10px;
   margin: 3px;
 }
+
+
+/* ////////////////////////////////////// */
+
+.show_winner{
+  display: none;
+}
+
+
+.layout.show_winner .btn {
+  width: 200px;
+}
+
+.layout.show_winner #winner {
+ color: var(--main-color);
+}
+
+
+
+
+
+
+/* ////////////////////////////////////// */
+
 footer {
   background-color: black;
 }
 
-footer p {
+footer p { 
   text-align: center;
   color: gray;
   padding: 20px 0;
-  margin: 0;
+  margin: 0; 
 }
+
 
 /* javascript  */
 
-.msg_error {
+.msg_error {     
   display: none;
 }
+
+
