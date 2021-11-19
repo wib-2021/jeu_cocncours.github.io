@@ -1,33 +1,33 @@
 let btnAdd = document.querySelector("#btn_add");
 let msgError = document.querySelector(".msg_error");
-let ul = document.querySelector(".elements_wraper ul");
+let ul = document.querySelector(".list_names ul");
 let btnTrier = document.querySelector(".trier");
 let showWinLayout = document.querySelector(".show_winner") 
 let sortLayout = document.querySelector(".sort") 
 
 let inputFile = document.querySelector("#inputFile");
 
-inputFile.addEventListener('change', function () {
+// inputFile.addEventListener('change', function () {
 
-    const reader = new FileReader();
+//     const reader = new FileReader();
 
-    reader.onload = function () {
+//     reader.onload = function () {
 
-        let list = reader.result.split(" ");
+//         let list = reader.result.split(" ");
 
 
-    }
+//     }
 
-    reader.readAsText(inputFile.files[0])
+//     reader.readAsText(inputFile.files[0])
 
-    if (inputFile.files.length > 0) {
-        btnTrier.classList.remove("disabled")
-    }
+//     if (inputFile.files.length > 0) {
+//         btnTrier.classList.remove("disabled")
+//     }
 
-    else
-        btnTrier.classList.add("disabled")
+//     else
+//         btnTrier.classList.add("disabled")
 
-})
+// })
 
 btnAdd.onclick = function (e) {
 
@@ -68,23 +68,22 @@ btnTrier.addEventListener("click", function (e) {
     let ulChildren = Array.from(ul.children);
     let winneIndex;
 
-  
 
 
     sortLayout.style.display ="none";
     showWinLayout.style.display ="block";
     
-    showWinLayout.querySelector(".elements_wraper").innerHTML ;
+    showWinLayout.querySelector("#lst2").appendChild(ul) ;
 
 
-    ulChildren = ulChildren.map((ele) => {
+    // ulChildren = ulChildren.map((ele) => {
 
-        return ele.innerHTML
-    })
+    //     return ele.innerHTML
+    // })
 
 
 
-    winneIndex = Math.floor(Math.random() * ulChildren.length);
+    // winneIndex = Math.floor(Math.random() * ulChildren.length);
 
 
 
@@ -93,6 +92,7 @@ btnTrier.addEventListener("click", function (e) {
 
 
 function showMessage(str) {
+
     msgError.innerHTML = str;
     msgError.style.display = "block";
 
