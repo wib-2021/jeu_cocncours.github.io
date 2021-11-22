@@ -1,4 +1,3 @@
-
 let msgError = document.querySelector(".msg_error");
 let btnTrier = document.querySelector(".trier");
 let showWinLayout = document.querySelector(".show_winner")
@@ -27,13 +26,14 @@ inputFile.addEventListener('change', function () {
             ul.appendChild(li)
 
         }
-
     }
 
-    reader.readAsText(inputFile.files[0])
+    reader.readAsText(inputFile.files[0]);
 
     if (inputFile.files.length > 0) {
+
         btnTrier.classList.remove("disabled")
+
     }
 
     else
@@ -42,29 +42,22 @@ inputFile.addEventListener('change', function () {
 })
 
 
-
 btnTrier.addEventListener("click", function (e) {
 
-    e.preventDefault()
+    e.preventDefault();
 
     let arrLi = Array.from(ul.children);
 
-
     let winId = Math.floor(Math.random() * arrLi.length);
-    
 
-    arrLi.forEach((ele)=>{
-        ele.classList.remove("winner")
-    })
+    let lst2 = document.querySelector("#lst2")
 
-    arrLi[winId].classList.add("winner");
 
-    document.querySelector("#lst2").appendChild(ul);
+    lst2.appendChild(ul);
+
 
     showWinLayout.style.display = "block";
-    sortLayout.style.display="none"
-
-
+    sortLayout.style.display = "none";
 
 })
 
