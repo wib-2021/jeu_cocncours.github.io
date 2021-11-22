@@ -2,54 +2,12 @@
   --main-color: #ac0000;
 }
 
-/* ico moon  */
-
-@font-face {
-  font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?grmho8");
-  src: url("../fonts/icomoon.eot?grmho8#iefix") format("embedded-opentype"),
-    url("../fonts/icomoon.ttf?grmho8") format("truetype"),
-    url("../fonts/icomoon.woff?grmho8") format("woff"),
-    url("../fonts/icomoon.svg?grmho8#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-[class^="icon-"],
-[class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-loop:before {
-  content: "\ea2d";
-}
-.icon-arrow-left2:before {
-  content: "\ea40";
-}
-.icon-plus:before {
-  content: "\ea0a";
-}
-
-/* ico moon  */
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
+    
 main {
   display: flex;
   flex-direction: column;
@@ -90,6 +48,12 @@ header .logo img {
   justify-content: center;
   width: 60%;
   margin: 0 auto;
+}
+
+
+.layout input:focus , .layout button:focus{
+  box-shadow: 0 0 0 0.25rem #ac00006b;
+  border: 1px solid #ac00006b;
 }
 
 .layout .btn {
@@ -136,8 +100,9 @@ header .logo img {
 }
 
 .layout.show_winner .btn {
-  width: 200px;
+  width: 170px;
   margin: 10px;
+  font-size: 16px;
 }
 
 /* ////////////////////////////////////// */
@@ -169,7 +134,7 @@ footer p {
   50% {
     top: 20px;
   }
-  to {
+  100% {
     top: 0;
   }
 }
