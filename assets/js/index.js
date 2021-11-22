@@ -19,18 +19,20 @@ inputFile.addEventListener('change', function () {
 
         let arrData = reader.result.split(" ");
 
+        console.log(arrData)
+
     }
 
     reader.readAsText(inputFile.files[0]);
 
-    // if (inputFile.files.length > 0) {
+    if (inputFile.files.length > 0) {
 
-    //     btnTrier.classList.remove("disabled")
+        btnTrier.classList.remove("disabled")
 
-    // }
+    }
 
-    // else
-    //     btnTrier.classList.add("disabled")
+    else
+        btnTrier.classList.add("disabled")
 
 })
 
