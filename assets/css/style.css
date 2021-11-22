@@ -118,6 +118,17 @@ header .logo img {
   margin: 3px;
 }
 
+.layout #lst2 ul li.annimate {
+  position: relative;
+  -webkit-animation-name: valueDrop;
+  -moz-animation-name: valueDrop;
+  animation-name: valueDrop;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
 /* ////////////////////////////////////// */
 
 .show_winner {
@@ -127,10 +138,6 @@ header .logo img {
 .layout.show_winner .btn {
   width: 200px;
   margin: 10px;
-}
-
-.layout.show_winner #winner {
-  color: var(--main-color);
 }
 
 /* ////////////////////////////////////// */
@@ -154,12 +161,15 @@ footer p {
 
 /* annimation  */
 
-@keyframes upDown {
-  0% {
-    top: 30px;
-  }
 
-  100% {
-    top: 0px;
+@keyframes valueDrop {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 20px;
+  }
+  to {
+    top: 0;
   }
 }
