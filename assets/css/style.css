@@ -65,44 +65,121 @@ header .logo img {
   color: white;
 }
 
-.layout .btn.disabled {
+.layout .trier.disabled {
   background-color: #aaa;
   cursor: not-allowed;
   pointer-events: none;
 }
 
-.layout .list_names ul {
-  list-style: none;
-  padding: 0;
-}
-.layout .list_names ul li {
-  display: inline-block;
-  border: 1px solid black;
-  padding: 10px;
-  margin: 3px;
-}
-
-.layout #lst2 ul li.annimate {
-  position: relative;
-  -webkit-animation-name: valueDrop;
-  -moz-animation-name: valueDrop;
-  animation-name: valueDrop;
-  -webkit-animation-duration: 0.5s;
-  -moz-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  animation-iteration-count: 1;
-}
 
 /* ////////////////////////////////////// */
 
-.show_winner {
+/* .lyWinner {
   display: none;
-}
+} */
 
-.layout.show_winner .btn {
+.layout.lyWinner .btn {
   width: 170px;
   margin: 10px;
   font-size: 16px;
+}
+
+.layout .container{
+  width: 500px;
+  height: 500px;
+  background-color: #ccc;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 15px solid #dde;
+  position: relative;
+  overflow: hidden;
+  transition: 5s;
+  -webkit-transition: 5s;
+  -moz-transition: 5s;
+  -ms-transition: 5s;
+  -o-transition: 5s;
+}
+
+.container div{
+  height: 50%;
+  width: 200px;
+  position: absolute;
+  clip-path: polygon(100% 0 , 50% 100% , 0 0);
+  transform: translateX(-50%);
+  transform-origin: bottom;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  left: 135px;  
+  color: white;
+}
+
+.container .one{
+  background-color: red;
+  left: 50%;
+}
+.container .two{
+  background-color: rgb(21, 196, 172);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+.container .three{
+  background-color: rgb(9, 184, 32);
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+.container .four{
+  background-color: rgb(194, 26, 104);
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+}
+.container .five{
+  background-color: rgb(10, 10, 10);
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+.container .six{
+  background-color: rgb(230, 216, 33);
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+}
+.container .seven{
+  background-color: rgb(47, 11, 207);
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+}
+.container .eight{
+  background-color: rgb(201, 148, 148);
+  transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+  -moz-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  -o-transform: rotate(315deg);
 }
 
 /* ////////////////////////////////////// */
@@ -122,19 +199,4 @@ footer p {
 
 .msg_error {
   display: none;
-}
-
-/* annimation  */
-
-
-@keyframes valueDrop {
-  0% {
-    top: 0;
-  }
-  50% {
-    top: 20px;
-  }
-  100% {
-    top: 0;
-  }
 }
